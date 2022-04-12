@@ -1,7 +1,6 @@
 package com.example.weatherapp.adapter
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,15 +9,13 @@ import android.widget.TextView
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.weatherapp.CityViewModel
-import com.example.weatherapp.ListCitiesFragment
+import com.example.weatherapp.viewmodels.CityViewModel
 import com.example.weatherapp.R
-import com.example.weatherapp.databinding.FragmentListCitiesBinding
 import com.example.weatherapp.model.WeatherCard
 import com.google.android.material.card.MaterialCardView
 import retrofit2.Response
 
-class CityAdapter(private val sharedViewModel : CityViewModel,private val context: Context, private val cities: List<Response<WeatherCard>>?) : RecyclerView.Adapter<CityAdapter.CityViewHolder>() {
+class CityAdapter(private val sharedViewModel : CityViewModel, private val context: Context, private val cities: List<Response<WeatherCard>>?) : RecyclerView.Adapter<CityAdapter.CityViewHolder>() {
 
     class CityViewHolder(private val view : View) : RecyclerView.ViewHolder(view) {
         val cityName : TextView = view.findViewById(R.id.city_name)

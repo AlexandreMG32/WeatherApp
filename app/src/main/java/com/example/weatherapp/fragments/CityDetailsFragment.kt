@@ -1,4 +1,4 @@
-package com.example.weatherapp
+package com.example.weatherapp.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.bumptech.glide.Glide
 import com.example.weatherapp.databinding.FragmentCityDetailsBinding
+import com.example.weatherapp.viewmodels.CityViewModel
 
 /**
  * A simple [Fragment] subclass.
